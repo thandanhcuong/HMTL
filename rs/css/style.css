@@ -1,0 +1,326 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper
+{
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+.header
+{
+    width: 100%;
+    height: 124px;
+    position: fixed;
+    top: 0;
+    background-color : white;
+    z-index: 1;
+}
+
+.main-header
+{
+    width: 1026px;
+    margin: 0 127px;
+}
+
+.header-top
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+.header-top .logo img
+{
+    width: 100px;
+    height: 32px;
+}
+
+.logo,
+.search-bar,
+.user-profile
+{flex-grow: 1}
+
+.search-bar
+{
+    width: 540px;
+    height: 42px;
+    border: 1px solid #DDD;
+    border-radius: 30px;
+    position: relative;
+}
+
+.search-bar i
+{
+    position: absolute;
+    left: 10px;
+    top: 13px;
+}
+
+.input-wrapper
+{
+    width: 490px;
+    height: 42px;
+    position: absolute;
+    left: 40px;
+}
+
+.input-wrapper input
+{
+    border: none;
+    width: 95%;
+    height: 35px;
+    position: relative;
+    top: 2px;
+    font-font: inherit;
+    font-size: 14px;
+}
+
+.input-wrapper input:focus
+{
+    outline: none;
+}
+
+.user-profile
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.upload,
+.bell,
+.profile
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDD;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.search-bar i,
+.upload i,
+.bell i,
+.profile i
+{
+    font-size: 20px;
+}
+
+.upload a,
+.bell a,
+.profile a
+{
+    color: black;
+}
+
+.header-bottom
+{
+    width: 1026px;
+    height: 77px;
+}
+
+.menu
+{
+    width: 1026px;
+    height: 100%;
+    display: flex;
+}
+
+.menu ul
+{
+    width: 100%;
+    float: left;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.menu ul li
+{
+    list-style: none;
+    padding-right: 25px;
+    font-size: 14px;
+}
+
+.menu ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+.menu .active
+{
+    color: rgb(101, 80, 158);
+}
+
+:visited
+{
+    color: rgb(101, 80, 158);
+}
+
+.item-menu .vip-box
+{
+    width: 55px;
+    height: 45px;
+}
+
+.vip-box
+{
+    width: 50px;
+    text-align: center;
+    color: white;
+}
+
+.vip
+{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background: linear-gradient(85deg, rgba(236,206,40,1) 50%, rgba(236,206,40,0.68531162464986) 90%);
+    border-radius: 10px;
+    padding: 4px 0;
+}
+
+.vip-box .vip a
+{
+    color : white;
+}
+
+.banner
+{
+    width: 1026px;
+    height: 343px;
+    margin-left: 127px;
+    margin-right: 127px;
+    margin-top: 130px;
+
+}
+
+.banner-slider
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/143bec4e5dd405c35ed0f231786cd8ce.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.you-like
+{
+    width: 1026px;
+    height: 343px;
+    margin: 0 127px;
+}
+
+.you-like h2
+{
+    font-family: Roboto, sans-serif;
+    text-transform: capitalize;
+}
+
+.album-slider
+{
+    width: 100%;
+    height: 267px;
+    display: flex;
+}
+
+.box-1
+{
+    width: 209px;
+    height: 221px;
+    padding: 0 10px;
+}
+
+.box-album
+{
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.box-album .image-album
+{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/5171ce85bbace79259ed787e83683f63.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-position: center;*/
+    transition: all 0.4s;
+}
+
+.overlay
+{
+    opacity: 0;
+    background-color: rgba(0,0,0,.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.overlay i
+{
+    opacity: 0;
+    text-align: center;
+    flex-grow: 1;
+    color: white;
+    font-size: 20px;
+}
+
+.overlay i.fa-play-circle
+{
+    width: 50px;
+    font-size: 50px;
+}
+
+.overlay:hover,
+.overlay:hover i
+{
+    opacity: 1;
+}
+
+.box-album .image-album:hover,
+.box-album .image-album:focus
+{
+    transform: scale(1.1);
+}
+
+.card-info
+{
+    width: 190px;
+    height: 31px;
+    display: inline-block;
+    position: relative;
+    top: 9px;
+}
+
+.card-info a
+{
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    color: black;
+    text-transform: capitalize;
+}
